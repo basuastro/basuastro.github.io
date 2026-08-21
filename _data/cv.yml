@@ -37,10 +37,11 @@
         #- Focus on helium reionization (He II→He III), spectral energy distributions, and ³He⁺ 3.5 cm hyperfine line detectability
     - title: Postdoctoral Researcher
       institution: Max Planck Institute for Astrophysics (MPA), Garching, Germany
-      - year: 2025
-        items:
-          - "Influence of the Spectral Energy Distribution of Reionization-Era Sources on the Lyman-α Forest — *arXiv:2509.15179*"
-          - "Variability of the UV Luminosity Function with SPICE — *arXiv:2501.18559*"
+      year: 2025
+      description:
+        - Working with Dr. Benedetta Ciardi and Dr. Volker Springel
+        - Exploring sources of Cosmic Reionization
+    - title: Doctoral Researcher
       institution: Max Planck Institute for Astrophysics (MPA), Garching, Germany
       year: 2021 – 2025
       description:
