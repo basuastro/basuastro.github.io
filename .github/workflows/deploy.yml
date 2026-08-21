@@ -32,6 +32,9 @@ jobs:
       - name: Install Bundler
         run: gem install bundler -v '2.6.9'
 
+      - name: Allow Bundler to update lockfile
+        run: bundle config set --local frozen false || true
+
       - name: Install dependencies
         run: bundle install --jobs 4 --retry 3
 
