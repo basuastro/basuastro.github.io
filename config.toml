@@ -1,0 +1,11 @@
+baseURL = "https://basuastro.github.io/"
+languageCode = "en-us"
+title = "Basu Astro"
+theme = "academic-cv"
+enableGitInfo = true
+
+[params]
+  author = "Your Name"
+  subtitle = "Academic CV"
+  description = "Personal website"
+  github = "basuastro"
