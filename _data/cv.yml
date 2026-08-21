@@ -16,7 +16,6 @@
       year: 2021 - 2025
       description:
         - Supervised by Dr. Benedetta Ciardi and Prof. Volker Springel
-        #- Thesis work on hydrogen and helium reionization, spectral energy distributions (SEDs), and Lyman-α forest statistics
         - Affiliated with the International Max Planck Research School (IMPRS) and LMU Munich
     - title: MSc. in Physics
       institution: Presidency University, Kolkata, India
@@ -34,7 +33,6 @@
       description:
         - Working with the GALPAC team (Joki Rosdahl, Jeremy Blaizot)
         - Unveiling the hidden population of high redshift galaxies with JWST - GLIMPSE survey
-        #- Focus on helium reionization (He II→He III), spectral energy distributions, and ³He⁺ 3.5 cm hyperfine line detectability
     - title: Postdoctoral Researcher
       institution: Max Planck Institute for Astrophysics (MPA), Garching, Germany
       year: 2025
@@ -53,17 +51,17 @@
   contents:
     - year: 2025
       items:
-        - "Influence of the Spectral Energy Distribution of Reionization-Era Sources on the Lyman-α Forest" — *arXiv:2509.15179*
-        - "Variability of the UV Luminosity Function with SPICE" — *arXiv:2501.18559*
+        - "Influence of the Spectral Energy Distribution of Reionization-Era Sources on the Lyman-α Forest — *arXiv:2509.15179*"
+        - "Variability of the UV Luminosity Function with SPICE — *arXiv:2501.18559*"
     - year: 2024
       items:
-        - "Helium reionization from empirical quasar luminosity functions before and after JWST" — *MNRAS 532(1): 841–858*
+        - "Helium reionization from empirical quasar luminosity functions before and after JWST — *MNRAS 532(1): 841–858*"
     - year: 2022
       items:
-        - "Properties of atomic hydrogen gas in the Galactic plane from THOR 21-cm absorption spectra" — *MNRAS 517(4): 5063–5068*
+        - "Properties of atomic hydrogen gas in the Galactic plane from THOR 21-cm absorption spectra — *MNRAS 517(4): 5063–5068*"
     - year: 2021
       items:
-        - "Stringent constraint on the radio signal from dark-matter annihilation in dwarf spheroidal galaxies using TGSS" — *MNRAS 502(2): 1605–1611*
+        - "Stringent constraint on the radio signal from dark-matter annihilation in dwarf spheroidal galaxies using TGSS — *MNRAS 502(2): 1605–1611*"
 
 - title: Academic Interests
   type: nested_list
