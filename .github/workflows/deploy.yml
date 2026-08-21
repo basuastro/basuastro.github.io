@@ -18,6 +18,17 @@ jobs:
           ruby-version: '3.1'
           cache: bundler
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+          cache: 'pip'
+
+      - name: Install Jupyter for notebook conversion
+        run: |
+          python -m pip install --upgrade pip
+          pip install jupyter nbconvert
+
       - name: Install Bundler
         run: gem install bundler -v '2.6.9'
 
@@ -126,7 +137,7 @@ jobs:
       - name: Install and Build 🔧
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick
-          pip3 install --upgrade nbconvert
+          pip3 install --upgrade nbconvert jupyter
           export JEKYLL_ENV=production
           bundle exec jekyll build
       - name: Purge unused CSS 🧹
