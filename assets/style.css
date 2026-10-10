@@ -464,3 +464,64 @@ figcaption { font-size: .84rem; color: var(--faint); margin-top: .7rem; line-hei
   .js .reveal { opacity: 1; transform: none; }
   html { scroll-behavior: auto; }
 }
+
+/* ---------- Journey timeline (home) ---------- */
+.journey-section { padding: 72px 0 96px; }
+.journey {
+  list-style: none; margin: 0; padding: 0; position: relative;
+  display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem;
+}
+/* the track runs through the dots */
+.journey::before {
+  content: ""; position: absolute; left: 0; right: 0; top: 41px; height: 2px;
+  background: linear-gradient(90deg, rgba(121,172,255,.15), var(--blue) 25%, var(--rose) 70%, var(--amber));
+  border-radius: 2px;
+}
+.journey li { position: relative; display: flex; flex-direction: column; align-items: center; text-align: center; }
+.j-year {
+  font-size: .78rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted);
+  height: 24px; white-space: nowrap;
+}
+.j-dot {
+  width: 18px; height: 18px; border-radius: 50%; margin: 8px 0 18px; position: relative; z-index: 1;
+  background: var(--bg); border: 2px solid var(--blue); box-shadow: 0 0 0 5px var(--bg);
+}
+.journey li:nth-child(3) .j-dot, .journey li:nth-child(4) .j-dot { border-color: var(--rose); }
+.journey li.now .j-dot { background: var(--amber); border-color: var(--amber); box-shadow: 0 0 0 5px var(--bg), 0 0 20px var(--amber); }
+.journey li.now .j-dot::after {
+  content: ""; position: absolute; inset: -2px; border-radius: 50%; border: 2px solid var(--amber);
+  animation: ping 2.2s ease-out infinite;
+}
+.journey li.now .j-year { color: var(--amber); }
+@keyframes ping { from { transform: scale(1); opacity: .8; } to { transform: scale(2.6); opacity: 0; } }
+.j-card {
+  width: 100%; flex: 1; display: flex; flex-direction: column; gap: .2rem;
+  padding: 1.1rem 1rem; border-radius: var(--radius-sm); border: 1px solid var(--line); background: var(--surface);
+  transition: transform .25s, border-color .25s, background .25s;
+}
+.j-card:hover { transform: translateY(-4px); border-color: var(--line-2); background: var(--surface-2); }
+.journey li.now .j-card { border-color: rgba(255,178,89,.45); background: rgba(255,178,89,.06); }
+.j-role { font-family: var(--serif); font-size: 1.12rem; line-height: 1.25; }
+.j-place { font-size: .88rem; color: var(--text); opacity: .85; line-height: 1.35; }
+.j-loc { font-size: .78rem; color: var(--faint); margin-top: auto; padding-top: .3rem; }
+
+@media (max-width: 860px) {
+  .journey { grid-template-columns: 1fr; gap: 0; padding-left: 8px; }
+  .journey::before { left: 16px; right: auto; top: 10px; bottom: 10px; width: 2px; height: auto;
+    background: linear-gradient(180deg, rgba(121,172,255,.15), var(--blue) 25%, var(--rose) 70%, var(--amber)); }
+  .journey li { display: grid; grid-template-columns: 18px 1fr; column-gap: 1.2rem; text-align: left; align-items: start; padding-bottom: 1.2rem; }
+  .j-dot { grid-column: 1; grid-row: 1 / span 2; margin: 2px 0 0; }
+  .j-year { grid-column: 2; grid-row: 1; height: auto; margin-bottom: .4rem; }
+  .j-card { grid-column: 2; grid-row: 2; }
+}
+
+/* ---------- Citation badges (publications) ---------- */
+.stats:has(#cite-total:not([hidden])) { grid-template-columns: repeat(4, 1fr); max-width: 860px; }
+@media (max-width: 720px) { .stats:has(#cite-total:not([hidden])) { grid-template-columns: 1fr 1fr; } }
+.page-hero .cite-updated { font-size: .82rem; margin: .8rem 0 0; }
+.chip.cite {
+  display: inline-flex; align-items: center; gap: .35rem;
+  color: var(--amber); border-color: rgba(255,178,89,.45); background: rgba(255,178,89,.08);
+}
+.chip.cite svg { width: 13px; height: 13px; }
+.chip.cite:hover { background: rgba(255,178,89,.16); }

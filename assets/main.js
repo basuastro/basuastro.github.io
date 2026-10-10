@@ -110,3 +110,48 @@ document.querySelectorAll("[role=tablist]").forEach((list) => {
     if (el) io.observe(el);
   });
 })();
+
+/* ---------- Publications: NASA/ADS citation counts from data/citations.json ---------- */
+(() => {
+  const pubs = document.querySelectorAll(".pub[data-ads]");
+  if (!pubs.length) return;
+  fetch("data/citations.json", { cache: "no-cache" })
+    .then((r) => (r.ok ? r.json() : Promise.reject()))
+    .then((data) => {
+      const papers = data.papers || {};
+      let total = 0, found = 0;
+      pubs.forEach((pub) => {
+        const entry = papers[pub.dataset.ads];
+        if (!entry || typeof entry.citations !== "number") return;
+        total += entry.citations;
+        found++;
+        let links = pub.querySelector(".pub-links");
+        if (!links) {
+          links = document.createElement("div");
+          links.className = "pub-links";
+          pub.querySelector(":scope > div").appendChild(links);
+        }
+        const a = document.createElement("a");
+        a.className = "chip cite";
+        a.href = `https://ui.adsabs.harvard.edu/abs/${encodeURIComponent(entry.bibcode)}/citations`;
+        a.target = "_blank";
+        a.rel = "noopener";
+        a.title = "Citations on NASA/ADS";
+        a.innerHTML =
+          '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 7h4v4c0 3-1.5 5-4 6l-.8-1.4C7.7 14.8 8.4 13.6 8.5 12H7zm7 0h4v4c0 3-1.5 5-4 6l-.8-1.4c1.5-.8 2.2-2 2.3-3.6H14z"/></svg>' +
+          `${entry.citations} citation${entry.citations === 1 ? "" : "s"}`;
+        links.prepend(a);
+      });
+      if (!found) return;
+      const stat = document.getElementById("cite-total");
+      stat.querySelector("b").textContent = total;
+      stat.hidden = false;
+      if (data.updated) {
+        const note = document.getElementById("cite-updated");
+        const d = new Date(data.updated);
+        note.textContent = `Citation counts from NASA/ADS, updated ${d.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })}.`;
+        note.hidden = false;
+      }
+    })
+    .catch(() => {});
+})();
