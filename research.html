@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research — Arghyadeep Basu</title>
+  <meta name="description" content="Research interests of Arghyadeep Basu: mock observations, galaxy formation and feedback, sources of reionization, the IGM and helium reionization.">
+  <meta property="og:title" content="Research — Arghyadeep Basu">
+  <meta property="og:description" content="Postdoctoral researcher at CRAL, Lyon. Early galaxies, reionization and the intergalactic medium.">
+  <meta property="og:image" content="images/portrait.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3CradialGradient id='g' cx='.35' cy='.35'%3E%3Cstop offset='0' stop-color='%23fff'/%3E%3Cstop offset='.3' stop-color='%23ffb259'/%3E%3Cstop offset='.7' stop-color='%23ff7a6b'/%3E%3Cstop offset='1' stop-color='%233b2a78'/%3E%3C/radialGradient%3E%3C/defs%3E%3Ccircle cx='16' cy='16' r='14' fill='url(%23g)'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<canvas id="stars" aria-hidden="true"></canvas>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html"><span class="brand-mark"></span>Arghyadeep Basu</a>
+    <button class="menu-btn" aria-label="Menu" aria-expanded="false"><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html" class="active">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="network.html">Network</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="nav-cta"><a href="https://drive.google.com/file/d/1gG64exNG0UTgEX6qRpfWxJT7RHyOhTdB/view?usp=share_link" target="_blank" rel="noopener">CV</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero banner">
+    <div class="container reveal">
+      <span class="eyebrow">Research Interests</span>
+      <h1>From the first galaxies <br>to the <span class="grad-text">cosmic web</span></h1>
+      <p>Broadly speaking, my academic passion lies in delving deeper into the intriguing realms of Early-Universe Astrophysics and Cosmology. At the core of my research endeavors is a profound interest in unraveling the mysteries surrounding the Intergalactic Medium and the properties of galaxies. Specifically, I am intrigued by the prospect of investigating these cosmic phenomena through the correlation of various probes.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:40px">
+    <div class="container research-layout">
+      <nav class="toc" aria-label="On this page">
+        <p>On this page</p>
+        <ol>
+          <li><a href="#mocks">Mock Observations</a></li>
+          <li><a href="#feedback">Galaxy Formation &amp; Feedback</a></li>
+          <li><a href="#sources">Sources of Reionization</a></li>
+          <li><a href="#igm">IGM &amp; Lyman-α Forest</a></li>
+          <li><a href="#helium">Helium Reionization</a></li>
+          <li><a href="#resources">CV, Thesis &amp; Poster</a></li>
+        </ol>
+      </nav>
+
+      <div>
+        <article class="topic reveal" id="mocks">
+          <span class="topic-num">01</span>
+          <h2>Mock Observations for Current Telescope Data</h2>
+          <p>I am developing a pipeline to create realistic mock observations from cosmological radiation-hydrodynamic simulations, currently focusing on the SPHINX simulations. The goal is to turn the physical properties of simulated galaxies—such as gas density, temperature, metallicity, ionization, and radiation—into synthetic observations that can be directly compared with real telescope data, particularly from JWST.</p>
+          <p>The pipeline produces mock images and spectra while including realistic observational effects such as instrumental resolution, detector noise, dust attenuation, and survey selection effects. This allows us to analyse simulated galaxies in much the same way as observed galaxies. These mock observations provide a bridge between simulations and observations. They help us test observational methods, understand possible measurement biases, and predict which physical features of galaxies can be detected with current and future telescopes.</p>
+          <div class="figs">
+            <figure class="dark">
+              <img src="images/res-mocks.jpg" alt="Grid of simulated JWST colour images of galaxies at different cosmic times" loading="lazy">
+              <figcaption>Image adapted from Katz et al. 2023.</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article class="topic reveal" id="feedback">
+          <span class="topic-num">02</span>
+          <h2>Galaxy Formation, Stellar Feedback and Bursty Star Formation</h2>
+          <p>Understanding how galaxies assemble their stellar mass requires studying the complex interplay between gas accretion, star formation, and feedback processes. My work investigates the physical mechanisms that regulate galaxy formation in cosmological environments, with particular emphasis on the role of stellar feedback in shaping the interstellar medium and controlling star formation.</p>
+          <p>Supernova explosions and stellar radiation inject energy and momentum into the surrounding gas, driving outflows, redistributing baryons, and regulating the efficiency with which galaxies convert gas into stars. These feedback processes are crucial for determining the structure of galaxies and their evolution across cosmic time.</p>
+          <p>Using high-resolution cosmological simulations (SPICE), I explore how different feedback mechanisms influence star formation, gas dynamics, and the observable properties of galaxies. In particular, I study how stellar feedback shapes the rest-frame ultraviolet luminosity function (UV LF) of galaxies in the early Universe, which provides a key observational constraint on galaxy formation during the first billion years of cosmic history.</p>
+          <div class="figs two">
+            <figure class="dark">
+              <img src="images/res-spice.jpg" alt="Zoom-in panels from the SPICE simulation showing the cosmic web down to a single galaxy" loading="lazy">
+              <figcaption>The SPICE simulation, from the cosmic web to a single galaxy. Image taken from Bhagwat+2024.</figcaption>
+            </figure>
+            <figure>
+              <img src="images/res-sfr.jpg" alt="Star formation history versus lookback time for bursty, smooth and hyper supernova feedback models" loading="lazy">
+              <figcaption>Star formation histories under bursty, smooth and hyper supernova feedback. Image taken from Basu+2026.</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article class="topic reveal" id="sources">
+          <span class="topic-num">03</span>
+          <h2>Sources of Cosmic Reionization</h2>
+          <p>Understanding the sources that drove cosmic reionization is essential for explaining how the intergalactic medium transitioned from neutral to ionized in the early Universe. I investigate the astrophysical populations responsible for producing the ionizing photon budget, focusing primarily on early galaxies and quasars.</p>
+          <p>My work explores how the physical properties of these sources, such as star formation regulated by supernova-driven feedback, ionizing photon escape fractions, and the evolution of galaxy and quasar luminosity functions, determine their contribution to the Epoch of Reionization and the later Helium Epoch of Reionization. I also study additional ionization and heating mechanisms, including X-ray binaries and shock-heated interstellar gas, that can influence the thermal and ionization state of the intergalactic medium.</p>
+          <div class="figs">
+            <figure style="max-width:520px">
+              <img src="images/res-sources.jpg" alt="3D rendering of ionized bubbles (red) inside a neutral intergalactic medium (blue)" loading="lazy">
+              <figcaption>Image taken from Eide+2020.</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article class="topic reveal" id="igm">
+          <span class="topic-num">04</span>
+          <h2>Intergalactic Medium and the Lyman-α Forest</h2>
+          <p>My research explores the structure and physical state of the intergalactic medium (IGM), the diffuse gas that fills the space between galaxies. One of the most powerful probes of this medium is the Lyman-α forest, an array of absorption lines seen in quasar spectra caused by intervening hydrogen gas along the line of sight. By analyzing these absorption features, it is possible to map the distribution and properties of gas in the large-scale cosmic web.</p>
+          <p>Through comparisons between simulations and observations, I study the density, temperature, and ionization state of the IGM and its evolution across cosmic time. The Lyman-α forest provides insight into the growth of large-scale structure, the thermal history of the Universe, and the connection between galaxies and the surrounding cosmic environment.</p>
+          <div class="figs">
+            <figure style="max-width:560px">
+              <img src="images/res-lya.jpg" alt="Line-of-sight profiles of neutral fraction, temperature, optical depth and transmitted flux for different source models" loading="lazy">
+              <figcaption>Image taken from Basu+2025.</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article class="topic reveal" id="helium">
+          <span class="topic-num">05</span>
+          <h2>Helium (II to III) Reionization</h2>
+          <p>I study the epoch of helium reionization, when singly ionized helium in the intergalactic medium became fully ionized due to energetic radiation from quasars. This process occurred later than hydrogen reionization and had a profound impact on the thermal evolution of the intergalactic gas.</p>
+          <p>By combining cosmological simulations with observations of high-redshift quasars, I investigate the timing, duration, and spatial structure of helium reionization. This work provides insight into the role of quasars in shaping the ionization state of the Universe and helps explain observable signatures such as temperature fluctuations and absorption features in the He&nbsp;II Lyman-α forest. The project is further expanded to explore other probes (i.e. <sup>3</sup>He<sup>+</sup> transition line, FRBs, 3.5&nbsp;cm forest and temperature fluctuations) to have more insight about this epoch.</p>
+          <div class="figs">
+            <figure style="max-width:560px">
+              <img src="images/res-helium.jpg" alt="Map of He III regions (blue) around quasars in a partially ionized medium (orange)" loading="lazy">
+              <figcaption>Image taken from Basu+2024.</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article class="topic reveal" id="resources">
+          <span class="topic-num">06</span>
+          <h2>CV, Thesis &amp; Poster</h2>
+          <p class="muted">For more details of my research trajectory, have a look at these.</p>
+          <div class="resource-grid" style="margin-top:1.5rem">
+            <a class="resource" href="https://drive.google.com/file/d/1gG64exNG0UTgEX6qRpfWxJT7RHyOhTdB/view?usp=share_link" target="_blank" rel="noopener">
+              <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></span>
+              <h3>Curriculum Vitae</h3><p>My full research trajectory.</p>
+            </a>
+            <a class="resource" href="https://edoc.ub.uni-muenchen.de/35706/1/Basu_Arghyadeep.pdf" target="_blank" rel="noopener">
+              <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5V5a2 2 0 0 1 2-2h14v16H6.5A2.5 2.5 0 0 0 4 21.5 2.5 2.5 0 0 0 6.5 24"/><path d="M8 7h8M8 11h6"/></svg></span>
+              <h3>Ph.D. Thesis</h3><p>Tracing the Start and End of Cosmic Reionization, LMU Munich (2025).</p>
+            </a>
+            <a class="resource" href="https://drive.google.com/file/d/1TpyFEoLiP7cT3hi4ukInD9gkcpLw9rwL/view?usp=share_link" target="_blank" rel="noopener">
+              <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="m10 8 6 4-6 4z"/></svg></span>
+              <h3>Poster Explanation</h3><p>Walkthrough of my award-winning BUGS II poster.</p>
+            </a>
+          </div>
+
+          <div class="card poster" id="poster" style="margin-top:2rem">
+            <figure>
+              <img src="images/poster-bugs.jpg" alt="Poster: Chasing the high redshift faint galaxies with mocks" loading="lazy">
+            </figure>
+            <div>
+              <span class="tag rose">Best poster award</span>
+              <h3 style="margin-top:.8rem">Chasing the High Redshift Faint Galaxies with Mocks</h3>
+              <p class="muted">BUGS II conference, Heidelberg. Building realistic mock observations to interpret the JWST GLIMPSE view of the early Universe.</p>
+              <a class="btn btn-primary" href="https://drive.google.com/file/d/1TpyFEoLiP7cT3hi4ukInD9gkcpLw9rwL/view?usp=share_link" target="_blank" rel="noopener">See the poster explanation</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2026 Arghyadeep Basu</span>
+    <nav>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="about.html">About</a>
+      <a href="network.html">Network</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
