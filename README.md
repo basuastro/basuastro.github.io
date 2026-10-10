@@ -27,3 +27,19 @@ images/             All images
 - **Netlify / Cloudflare Pages**: drag and drop this folder at app.netlify.com/drop, or connect the repo.
 
 Both support a custom domain (e.g. `arghyadeepbasu.com`) later.
+
+### For pushing and committing
+
+cd ~/Documents/website
+git init -b main
+git remote add origin https://github.com/basuastro/basuastro.github.io.git
+git fetch origin
+git reset origin/main
+
+After that, each update is:
+
+
+git add -A
+git commit -m "Add news item"
+git push
+The site updates about a minute after each push.
