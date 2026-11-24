@@ -111,7 +111,7 @@ document.querySelectorAll("[role=tablist]").forEach((list) => {
   });
 })();
 
-/* ---------- Publications: NASA/ADS citation counts from data/citations.json ---------- */
+/* ---------- Publications: SciX / NASA ADS citation counts from data/citations.json ---------- */
 (() => {
   const pubs = document.querySelectorAll(".pub[data-ads]");
   if (!pubs.length) return;
@@ -133,10 +133,10 @@ document.querySelectorAll("[role=tablist]").forEach((list) => {
         }
         const a = document.createElement("a");
         a.className = "chip cite";
-        a.href = `https://ui.adsabs.harvard.edu/abs/${encodeURIComponent(entry.bibcode)}/citations`;
+        a.href = `https://scixplorer.org/abs/${encodeURIComponent(entry.bibcode)}/citations`;
         a.target = "_blank";
         a.rel = "noopener";
-        a.title = "Citations on NASA/ADS";
+        a.title = "Citations on SciX";
         a.innerHTML =
           '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 7h4v4c0 3-1.5 5-4 6l-.8-1.4C7.7 14.8 8.4 13.6 8.5 12H7zm7 0h4v4c0 3-1.5 5-4 6l-.8-1.4c1.5-.8 2.2-2 2.3-3.6H14z"/></svg>' +
           `${entry.citations} citation${entry.citations === 1 ? "" : "s"}`;
@@ -149,7 +149,7 @@ document.querySelectorAll("[role=tablist]").forEach((list) => {
       if (data.updated) {
         const note = document.getElementById("cite-updated");
         const d = new Date(data.updated);
-        note.textContent = `Citation counts from NASA/ADS, updated ${d.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })}.`;
+        note.textContent = `Citation counts from SciX (NASA ADS), updated ${d.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })}.`;
         note.hidden = false;
       }
     })

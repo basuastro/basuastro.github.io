@@ -7,7 +7,7 @@ those queries and writes the results to data/citations.json, which the page read
 Usage:
     ADS_TOKEN=your-token python3 scripts/update_citations.py
 
-Get a free token at https://ui.adsabs.harvard.edu/user/settings/token
+Get a free token at https://scixplorer.org/user/settings/token
 """
 
 import html
@@ -15,6 +15,7 @@ import json
 import os
 import re
 import sys
+import time
 import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
@@ -26,11 +27,18 @@ OUT = ROOT / "data" / "citations.json"
 API = "https://api.adsabs.harvard.edu/v1/search/query"
 
 
-def ads_lookup(query, token):
+def ads_lookup(query, token, tries=4):
     params = urllib.parse.urlencode({"q": query, "fl": "bibcode,citation_count", "rows": 1})
     req = urllib.request.Request(f"{API}?{params}", headers={"Authorization": f"Bearer {token}"})
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        docs = json.load(resp)["response"]["docs"]
+    for attempt in range(tries):  # the API is flaky at times: retry with backoff
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                docs = json.load(resp)["response"]["docs"]
+            break
+        except Exception:
+            if attempt == tries - 1:
+                raise
+            time.sleep(5 * 2 ** attempt)
     if not docs:
         return None
     return {"bibcode": docs[0]["bibcode"], "citations": docs[0].get("citation_count", 0)}
@@ -39,7 +47,7 @@ def ads_lookup(query, token):
 def main():
     token = os.environ.get("ADS_TOKEN")
     if not token:
-        sys.exit("Set ADS_TOKEN (https://ui.adsabs.harvard.edu/user/settings/token)")
+        sys.exit("Set ADS_TOKEN (https://scixplorer.org/user/settings/token)")
 
     queries = [html.unescape(q) for q in re.findall(r'data-ads="([^"]+)"', PAGE.read_text())]
     previous = json.loads(OUT.read_text()).get("papers", {}) if OUT.exists() else {}

@@ -10,9 +10,20 @@ about.html          Bio, timeline, hobbies
 network.html        "Friendly" scientists
 contact.html        Email / LinkedIn
 assets/style.css    All styling (colours are CSS variables at the top)
-assets/main.js      Starfield, mobile menu, tabs, scroll animations
+assets/main.js      Starfield, mobile menu, tabs, scroll animations, citation counts
+assets/scix-graphs.js  Interactive SciX author/paper network + concept cloud (publications.html)
+scripts/            Fetch citations + SciX graphs into data/ (run weekly by .github/workflows/citations.yml)
 images/             All images
 ```
+
+## SciX data (citations + graphs)
+
+The weekly GitHub Action fills `data/citations.json` and `data/scix.json` using the
+`ADS_TOKEN` repository secret (Settings → Secrets and variables → Actions). Get a token at
+https://scixplorer.org/user/settings/token. To refresh by hand:
+
+    ADS_TOKEN=... python3 scripts/update_citations.py
+    ADS_TOKEN=... python3 scripts/update_scix_graphs.py
 
 ## Common edits
 
