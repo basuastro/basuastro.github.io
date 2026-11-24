@@ -39,6 +39,8 @@ def short(name):
     if "," not in name:
         return name
     last, given = (p.strip() for p in name.split(",", 1))
+    if re.search(r"\b(Community|Collaboration|Team|Consortium|Survey)\b", last, re.I):
+        return f"{given} {last}"  # "Community, Genesis" -> "Genesis Community"
     initials = " ".join("-".join(g[0] + "." for g in part.split("-") if g) for part in given.replace(".", ". ").split())
     return f"{last}, {initials}" if initials else last
 
