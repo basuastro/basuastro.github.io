@@ -28,7 +28,7 @@ https://scixplorer.org/user/settings/token. To refresh by hand:
 ## Common edits
 
 - **Add a news item**: copy a `<div class="news-item">` block in `index.html`.
-- **Add a paper**: copy an `<li class="pub">` block in `publications.html` and update the counts in the `.stats` boxes at the top.
+- **Add a paper**: add it to the SciX library; the weekly job (or *Run workflow* on the Actions tab) rebuilds the lists in `publications.html` between the `<!-- scix:... -->` markers and updates the counts. For something not on SciX (e.g. in preparation), copy an `<li class="pub">` block *outside* the markers.
 - **Add a colleague**: copy an `<a class="person">` block in `network.html`; put their photo in `images/people/`.
 - **Nav / footer**: these are repeated in every `.html` file, so change them in all six.
 

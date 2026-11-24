@@ -16,22 +16,25 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Fetch SciX library, author network, paper network and concept cloud
+        continue-on-error: true   # a hiccup here should not block citation updates
+        env:
+          ADS_TOKEN: ${{ secrets.ADS_TOKEN }}
+        run: python3 scripts/update_scix_graphs.py
+      - name: Rebuild the publication list from the SciX library
+        continue-on-error: true
+        run: python3 scripts/build_publications.py
       - name: Fetch citation counts
         env:
           ADS_TOKEN: ${{ secrets.ADS_TOKEN }}
         run: python3 scripts/update_citations.py
-      - name: Fetch author network, paper network and concept cloud
-        continue-on-error: true   # a graph hiccup should not block citation updates
-        env:
-          ADS_TOKEN: ${{ secrets.ADS_TOKEN }}
-        run: python3 scripts/update_scix_graphs.py
       - name: Commit if changed
         run: |
           # Only commit when a count changed, not just the timestamp
-          git add data/
+          git add data/ publications.html
           if git diff --cached --quiet; then exit 0; fi
           if [ "$(git diff --cached -U0 | grep -E '^[+-] ' | grep -vc '"updated"')" = 0 ]; then exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898313+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Update SciX citation counts and graphs"
+          git commit -m "Update publications, citations and graphs from SciX"
           git push

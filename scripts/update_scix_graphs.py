@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""Fetch the SciX / NASA ADS author network, paper network and concept cloud
-for the public ADS library and save them to data/scix.json for publications.html.
+"""Fetch the SciX / NASA ADS library (data/library.json, used to build the
+publication list) plus its author network, paper network and concept cloud
+(data/scix.json) for publications.html.
 
 The SciX visualisation API needs a token, which must not be put in the browser,
 so this runs in the GitHub Action (or locally) and the page reads the saved JSON.
@@ -23,6 +24,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "scix.json"
+LIB_OUT = ROOT / "data" / "library.json"
 API = "https://api.adsabs.harvard.edu/v1"
 LIBRARY = "Lyo_uP6QR2OPkW6iGUMGhA"
 QUERY = f"docs(library/{LIBRARY})"
@@ -51,7 +53,8 @@ def call(path, token, body=None, params=None, tries=4):
 
 def library_papers(token):
     res = call("search/query", token, params={
-        "q": QUERY, "fl": "bibcode,scix_id,title,first_author,year,citation_count",
+        "q": QUERY,
+        "fl": "bibcode,scix_id,title,author,first_author,year,pubdate,pub,volume,page,doi,identifier,doctype,citation_count",
         "rows": 200, "sort": "date desc",
     })
     return res["response"]["docs"]
@@ -144,6 +147,8 @@ def main():
     bibcodes = [p["bibcode"] for p in papers]
     by_scix = {p.get("scix_id"): p for p in papers if p.get("scix_id")}
     print(f"Library: {len(bibcodes)} papers")
+    LIB_OUT.parent.mkdir(exist_ok=True)
+    LIB_OUT.write_text(json.dumps({"library": LIBRARY, "papers": papers}, indent=1, ensure_ascii=False) + "\n")
 
     out = {"updated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "library": LIBRARY}
     jobs = {
