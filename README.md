@@ -12,6 +12,7 @@ contact.html        Email / LinkedIn
 assets/style.css    All styling (colours are CSS variables at the top)
 assets/main.js      Starfield, mobile menu, tabs, scroll animations, citation counts
 assets/scix-graphs.js  Interactive SciX author/paper network + concept cloud (publications.html)
+assets/scix-metrics.js Interactive SciX metrics: indices + citations/reads/papers per year
 scripts/            Fetch citations + SciX graphs into data/ (run weekly by .github/workflows/citations.yml)
 images/             All images
 ```

@@ -137,6 +137,50 @@ def concept_cloud(token, n_papers):
     return words[:80]
 
 
+def metrics(token, bibcodes):
+    """SciX metrics: headline numbers (all papers / refereed only), per-year
+    histograms and the h/g/i10/tori indices over time."""
+    res = call("metrics", token, body={"bibcodes": bibcodes})
+    if "Error" in res:
+        raise RuntimeError(res["Error"])
+
+    def summary(suffix):
+        basic = res.get("basic stats" + suffix, {})
+        cites = res.get("citation stats" + suffix, {})
+        ind = res.get("indicators" + suffix, {})
+        return {
+            "papers": basic.get("number of papers"),
+            "reads": basic.get("total number of reads"),
+            "citations": cites.get("total number of citations"),
+            "refereed_citations": cites.get("total number of refereed citations"),
+            "citing_papers": cites.get("number of citing papers"),
+            "self_citations": cites.get("number of self-citations"),
+            **{k: ind.get(k) for k in ("h", "g", "i10", "i100", "m", "tori", "riq", "read10")},
+        }
+
+    h = res.get("histograms", {})
+    cit = h.get("citations", {})
+    out = {
+        "all": summary(""),
+        "refereed": summary(" refereed"),
+        "papers": {"all": h.get("publications", {}).get("all publications", {}),
+                   "refereed": h.get("publications", {}).get("refereed publications", {})},
+        "reads": {"all": h.get("reads", {}).get("all reads", {}),
+                  "refereed": h.get("reads", {}).get("refereed reads", {})},
+        # "<citing> to <cited>": who cites (refereed or not) which kind of paper
+        "citations": {
+            "ref_to_ref": cit.get("refereed to refereed", {}),
+            "ref_to_nonref": cit.get("refereed to nonrefereed", {}),
+            "nonref_to_ref": cit.get("nonrefereed to refereed", {}),
+            "nonref_to_nonref": cit.get("nonrefereed to nonrefereed", {}),
+        },
+        "timeseries": {k: v for k, v in res.get("time series", {}).items() if k in ("h", "g", "i10", "tori")},
+    }
+    if out["all"]["papers"] is None:
+        print(f"  metrics: unexpected response keys {sorted(res)}", file=sys.stderr)
+    return out
+
+
 def main():
     token = os.environ.get("ADS_TOKEN")
     if not token:
@@ -155,13 +199,15 @@ def main():
         "authors": lambda: author_network(token, bibcodes),
         "papers": lambda: paper_network(token, bibcodes, by_scix),
         "concepts": lambda: concept_cloud(token, len(bibcodes)),
+        "metrics": lambda: metrics(token, bibcodes),
     }
     ok = 0
     for key, job in jobs.items():
         try:
             out[key] = job()
             ok += 1
-            size = len(out[key]["nodes"]) if isinstance(out[key], dict) else len(out[key])
+            v = out[key]
+            size = len(v["nodes"]) if "nodes" in v else len(v)
             print(f"  {key}: {size} items")
         except Exception as e:  # keep the last good copy if one endpoint fails
             print(f"  ! {key}: {e}", file=sys.stderr)

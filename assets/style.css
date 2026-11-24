@@ -557,3 +557,40 @@ figcaption { font-size: .84rem; color: var(--faint); margin-top: .7rem; line-hei
   font-size: .82rem; line-height: 1.45; color: var(--text);
 }
 .viz-tip span { color: var(--faint); font-size: .75rem; }
+
+/* SciX metrics (publications.html) */
+.m-bar { display: flex; justify-content: flex-end; margin-bottom: 1rem; }
+.m-seg { display: inline-flex; padding: .25rem; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); }
+.m-seg button { font: inherit; font-size: .85rem; font-weight: 600; color: var(--muted); background: none; border: 0; padding: .4rem 1rem; border-radius: 999px; cursor: pointer; }
+.m-seg button[aria-pressed="true"] { color: var(--text); background: var(--surface-2); box-shadow: inset 0 0 0 1px var(--line-2); }
+.m-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: .8rem; margin-bottom: 1.8rem; }
+.m-tile { cursor: help; }
+.m-tile b { font-size: 1.9rem; }
+.m-views { flex-wrap: wrap; border-radius: 22px; margin-bottom: 1rem; }
+.m-chart { padding: 1rem 1.2rem 1.2rem; background: rgba(11, 16, 32, .7); }
+.m-chart-head { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; margin-bottom: .4rem; }
+.m-legend { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; font-size: .85rem; color: var(--muted); }
+.m-legend span { display: inline-flex; align-items: center; gap: .45rem; }
+.m-legend i { width: 12px; height: 12px; border-radius: 3px; }
+.m-legend i.line { height: 2px; width: 16px; border-radius: 1px; }
+.m-table-btn { cursor: pointer; font: inherit; font-size: .8rem; background: var(--surface); }
+.m-plot { height: 320px; }
+.m-plot svg { width: 100%; height: 100%; display: block; overflow: visible; }
+.m-grid line { stroke: var(--line); }
+.m-grid text, .m-axis text { fill: var(--faint); font: 11px var(--sans); }
+.m-axis .domain { stroke: var(--line-2); }
+.m-direct { fill: var(--muted); font: 600 11px var(--sans); }
+.m-hair { stroke: var(--line-2); stroke-width: 1; pointer-events: none; }
+.m-col:hover path, .m-col:hover rect:not(.m-hit), .m-col:focus-within path, .m-col:focus-within rect:not(.m-hit) { filter: brightness(1.18); }
+.m-hit { cursor: default; outline: none; }
+.m-scope-note { font-size: .8rem; margin: .5rem 0 0; }
+.m-table { margin-top: 1rem; max-height: 320px; overflow: auto; }
+.m-table table { width: 100%; border-collapse: collapse; font-size: .85rem; font-variant-numeric: tabular-nums; }
+.m-table th, .m-table td { padding: .4rem .6rem; text-align: right; border-bottom: 1px solid var(--line); }
+.m-table th:first-child, .m-table td:first-child { text-align: left; }
+.m-table th { color: var(--muted); font-weight: 600; position: sticky; top: 0; background: var(--bg-2); }
+.m-tip .m-tip-title { color: var(--muted); font-size: .75rem; margin-bottom: .2rem; }
+.m-tip-row { display: flex; align-items: center; gap: .5rem; }
+.m-tip-row i { width: 12px; height: 2px; border-radius: 1px; flex: none; }
+.m-tip-row b { font-variant-numeric: tabular-nums; color: var(--text); }
+.m-tip-row span { color: var(--muted); }

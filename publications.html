@@ -408,12 +408,33 @@
         </div>
       </div>
 
-      <div class="pub-section reveal">
-        <h2>Metrics</h2>
-        <p class="muted">As of 18 August 2026. Source: SciX / NASA ADS.</p>
-        <figure class="card" style="padding:1rem;background:#fff">
+      <div class="pub-section" id="scix-metrics">
+        <h2 class="reveal">Metrics</h2>
+        <p class="muted reveal">From my <a href="https://scixplorer.org/search?p=1&amp;q=docs%28library%2FLyo_uP6QR2OPkW6iGUMGhA%29&amp;sort=date+desc&amp;d=astrophysics" target="_blank" rel="noopener">SciX library</a>. <span class="m-updated"></span></p>
+        <figure class="card m-fallback" style="padding:1rem;background:#fff">
           <img src="images/ads-metrics.jpg" alt="NASA ADS citation metrics table and citations-per-year chart" loading="lazy" style="border:0">
         </figure>
+        <div class="m-live" hidden>
+          <div class="m-bar">
+            <div class="m-seg" role="group" aria-label="Which papers to count">
+              <button type="button" data-scope="all" aria-pressed="true">All papers</button>
+              <button type="button" data-scope="refereed" aria-pressed="false">Refereed only</button>
+            </div>
+          </div>
+          <div class="m-tiles"></div>
+          <div class="tabs m-views" role="group" aria-label="Chart">
+            <button type="button" data-view="citations" aria-selected="true">Citations per year</button>
+            <button type="button" data-view="reads" aria-selected="false">Reads per year</button>
+            <button type="button" data-view="papers" aria-selected="false">Papers per year</button>
+            <button type="button" data-view="indices" aria-selected="false">Indices over time</button>
+          </div>
+          <div class="card m-chart">
+            <div class="m-chart-head"><div class="m-legend"></div><button type="button" class="chip m-table-btn">Show as table</button></div>
+            <div class="m-plot"></div>
+            <p class="muted m-scope-note" hidden>Indices over time are for all papers.</p>
+            <div class="m-table" hidden></div>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -438,5 +459,6 @@
 <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/d3-cloud@1/build/d3.layout.cloud.min.js"></script>
 <script src="assets/scix-graphs.js"></script>
+<script src="assets/scix-metrics.js"></script>
 </body>
 </html>
