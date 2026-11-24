@@ -1,0 +1,1452 @@
+{
+ "updated": "2026-11-24T10:08:21Z",
+ "library": "Lyo_uP6QR2OPkW6iGUMGhA",
+ "authors": {
+  "nodes": [
+   {
+    "id": 0,
+    "name": "Basu, A",
+    "size": 150.0,
+    "group": 1
+   },
+   {
+    "id": 1,
+    "name": "Beuther, H",
+    "size": 5.0,
+    "group": 1
+   },
+   {
+    "id": 2,
+    "name": "Bhagwat, A",
+    "size": 11.292470651445395,
+    "group": 1
+   },
+   {
+    "id": 3,
+    "name": "Bianco, M",
+    "size": 6.269069711215877,
+    "group": 1
+   },
+   {
+    "id": 4,
+    "name": "Bolton, J",
+    "size": 8.775482390867236,
+    "group": 1
+   },
+   {
+    "id": 5,
+    "name": "Boschi, T",
+    "size": 5.898924378777913,
+    "group": 1
+   },
+   {
+    "id": 6,
+    "name": "Choudhuri, S",
+    "size": 9.145627723305202,
+    "group": 1
+   },
+   {
+    "id": 7,
+    "name": "Ciardi, B",
+    "size": 55.29041250057141,
+    "group": 1
+   },
+   {
+    "id": 8,
+    "name": "Costa, T",
+    "size": 11.292470651445395,
+    "group": 1
+   },
+   {
+    "id": 9,
+    "name": "Datta, K",
+    "size": 8.775482390867236,
+    "group": 1
+   },
+   {
+    "id": 10,
+    "name": "Garaldi, E",
+    "size": 49.646292784329546,
+    "group": 1
+   },
+   {
+    "id": 11,
+    "name": "Giri, S",
+    "size": 6.269069711215877,
+    "group": 1
+   },
+   {
+    "id": 12,
+    "name": "Mellema, G",
+    "size": 6.269069711215877,
+    "group": 1
+   },
+   {
+    "id": 13,
+    "name": "Ott, J",
+    "size": 5.0,
+    "group": 1
+   },
+   {
+    "id": 14,
+    "name": "Roy, N",
+    "size": 15.06795304231263,
+    "group": 1
+   },
+   {
+    "id": 15,
+    "name": "Rugel, M",
+    "size": 5.0,
+    "group": 1
+   },
+   {
+    "id": 16,
+    "name": "Sarkar, D",
+    "size": 9.145627723305202,
+    "group": 1
+   },
+   {
+    "id": 17,
+    "name": "Schneider, A",
+    "size": 5.898924378777913,
+    "group": 1
+   },
+   {
+    "id": 18,
+    "name": "Soler, J",
+    "size": 5.0,
+    "group": 1
+   },
+   {
+    "id": 19,
+    "name": "Stil, J",
+    "size": 5.0,
+    "group": 1
+   },
+   {
+    "id": 20,
+    "name": "Syed, J",
+    "size": 5.0,
+    "group": 1
+   },
+   {
+    "id": 21,
+    "name": "Viel, M",
+    "size": 8.775482390867236,
+    "group": 1
+   }
+  ],
+  "links": [
+   {
+    "source": 0,
+    "target": 14,
+    "value": 37.400000000000006
+   },
+   {
+    "source": 0,
+    "target": 10,
+    "value": 39.13333333333334
+   },
+   {
+    "source": 0,
+    "target": 1,
+    "value": 1.0
+   },
+   {
+    "source": 0,
+    "target": 13,
+    "value": 1.0
+   },
+   {
+    "source": 0,
+    "target": 15,
+    "value": 1.0
+   },
+   {
+    "source": 0,
+    "target": 18,
+    "value": 1.0
+   },
+   {
+    "source": 0,
+    "target": 19,
+    "value": 1.0
+   },
+   {
+    "source": 0,
+    "target": 20,
+    "value": 1.0
+   },
+   {
+    "source": 1,
+    "target": 13,
+    "value": 1.0
+   },
+   {
+    "source": 1,
+    "target": 14,
+    "value": 1.0
+   },
+   {
+    "source": 1,
+    "target": 15,
+    "value": 1.0
+   },
+   {
+    "source": 1,
+    "target": 18,
+    "value": 1.0
+   },
+   {
+    "source": 1,
+    "target": 19,
+    "value": 1.0
+   },
+   {
+    "source": 1,
+    "target": 20,
+    "value": 1.0
+   },
+   {
+    "source": 13,
+    "target": 14,
+    "value": 1.0
+   },
+   {
+    "source": 13,
+    "target": 15,
+    "value": 1.0
+   },
+   {
+    "source": 13,
+    "target": 18,
+    "value": 1.0
+   },
+   {
+    "source": 13,
+    "target": 19,
+    "value": 1.0
+   },
+   {
+    "source": 13,
+    "target": 20,
+    "value": 1.0
+   },
+   {
+    "source": 14,
+    "target": 15,
+    "value": 1.0
+   },
+   {
+    "source": 14,
+    "target": 18,
+    "value": 1.0
+   },
+   {
+    "source": 14,
+    "target": 19,
+    "value": 1.0
+   },
+   {
+    "source": 14,
+    "target": 20,
+    "value": 1.0
+   },
+   {
+    "source": 15,
+    "target": 18,
+    "value": 1.0
+   },
+   {
+    "source": 15,
+    "target": 19,
+    "value": 1.0
+   },
+   {
+    "source": 15,
+    "target": 20,
+    "value": 1.0
+   },
+   {
+    "source": 18,
+    "target": 19,
+    "value": 1.0
+   },
+   {
+    "source": 18,
+    "target": 20,
+    "value": 1.0
+   },
+   {
+    "source": 19,
+    "target": 20,
+    "value": 1.0
+   },
+   {
+    "source": 0,
+    "target": 3,
+    "value": 18.333333333333343
+   },
+   {
+    "source": 0,
+    "target": 5,
+    "value": 18.333333333333343
+   },
+   {
+    "source": 0,
+    "target": 11,
+    "value": 18.333333333333343
+   },
+   {
+    "source": 0,
+    "target": 12,
+    "value": 18.333333333333343
+   },
+   {
+    "source": 0,
+    "target": 17,
+    "value": 18.333333333333343
+   },
+   {
+    "source": 3,
+    "target": 5,
+    "value": 18.333333333333343
+   },
+   {
+    "source": 3,
+    "target": 10,
+    "value": 18.333333333333343
+   },
+   {
+    "source": 3,
+    "target": 11,
+    "value": 18.333333333333343
+   },
+   {
+    "source": 3,
+    "target": 12,
+    "value": 18.333333333333343
+   },
+   {
+    "source": 3,
+    "target": 17,
+    "value": 18.333333333333343
+   },
+   {
+    "source": 5,
+    "target": 10,
+    "value": 18.333333333333343
+   },
+   {
+    "source": 5,
+    "target": 11,
+    "value": 18.333333333333343
+   },
+   {
+    "source": 5,
+    "target": 12,
+    "value": 18.333333333333343
+   },
+   {
+    "source": 5,
+    "target": 17,
+    "value": 18.333333333333343
+   },
+   {
+    "source": 10,
+    "target": 11,
+    "value": 18.333333333333343
+   },
+   {
+    "source": 10,
+    "target": 12,
+    "value": 18.333333333333343
+   },
+   {
+    "source": 10,
+    "target": 17,
+    "value": 18.333333333333343
+   },
+   {
+    "source": 11,
+    "target": 12,
+    "value": 18.333333333333343
+   },
+   {
+    "source": 11,
+    "target": 17,
+    "value": 18.333333333333343
+   },
+   {
+    "source": 12,
+    "target": 17,
+    "value": 18.333333333333343
+   },
+   {
+    "source": 0,
+    "target": 7,
+    "value": 40.0
+   },
+   {
+    "source": 0,
+    "target": 4,
+    "value": 32.20000000000002
+   },
+   {
+    "source": 0,
+    "target": 6,
+    "value": 32.20000000000002
+   },
+   {
+    "source": 0,
+    "target": 9,
+    "value": 32.20000000000002
+   },
+   {
+    "source": 0,
+    "target": 16,
+    "value": 32.20000000000002
+   },
+   {
+    "source": 0,
+    "target": 21,
+    "value": 32.20000000000002
+   },
+   {
+    "source": 4,
+    "target": 7,
+    "value": 32.20000000000002
+   },
+   {
+    "source": 4,
+    "target": 10,
+    "value": 32.20000000000002
+   },
+   {
+    "source": 4,
+    "target": 21,
+    "value": 32.20000000000002
+   },
+   {
+    "source": 6,
+    "target": 9,
+    "value": 32.20000000000002
+   },
+   {
+    "source": 6,
+    "target": 14,
+    "value": 32.20000000000002
+   },
+   {
+    "source": 6,
+    "target": 16,
+    "value": 32.20000000000002
+   },
+   {
+    "source": 7,
+    "target": 21,
+    "value": 32.20000000000002
+   },
+   {
+    "source": 9,
+    "target": 14,
+    "value": 32.20000000000002
+   },
+   {
+    "source": 9,
+    "target": 16,
+    "value": 32.20000000000002
+   },
+   {
+    "source": 10,
+    "target": 21,
+    "value": 32.20000000000002
+   },
+   {
+    "source": 14,
+    "target": 16,
+    "value": 32.20000000000002
+   },
+   {
+    "source": 7,
+    "target": 10,
+    "value": 38.26666666666668
+   },
+   {
+    "source": 0,
+    "target": 2,
+    "value": 36.533333333333346
+   },
+   {
+    "source": 0,
+    "target": 8,
+    "value": 36.533333333333346
+   },
+   {
+    "source": 2,
+    "target": 7,
+    "value": 36.533333333333346
+   },
+   {
+    "source": 2,
+    "target": 8,
+    "value": 36.533333333333346
+   },
+   {
+    "source": 7,
+    "target": 8,
+    "value": 36.533333333333346
+   }
+  ]
+ },
+ "papers": {
+  "nodes": [
+   {
+    "id": 0,
+    "bibcode": "2025arXiv251107542A",
+    "title": "JWST's GLIMPSE: an overview of the deepest probe of early galaxy formation and cosmic reionization",
+    "first_author": "Atek, Hakim",
+    "year": "",
+    "citations": 51,
+    "group": 2
+   },
+   {
+    "id": 1,
+    "bibcode": "2026ApJ..1001..234J",
+    "title": "A GLIMPSE into the UV Continuum Slopes of the Faintest Galaxies in the Epoch of Reionization",
+    "first_author": "Jecmen, Michelle C.",
+    "year": "",
+    "citations": 24,
+    "group": 2
+   },
+   {
+    "id": 2,
+    "bibcode": "2026OJAp....966816A",
+    "title": "A GLIMPSE of the 99%: a census of the faintest galaxies during the epoch of reionization and its implications for galaxy formation models",
+    "first_author": "Atek, Hakim",
+    "year": "",
+    "citations": 21,
+    "group": 2
+   },
+   {
+    "id": 3,
+    "bibcode": "2026MNRAS.545f2240B",
+    "title": "Variability of the UV luminosity function with SPICE",
+    "first_author": "Basu, Arghyadeep",
+    "year": "",
+    "citations": 10,
+    "group": 2
+   },
+   {
+    "id": 4,
+    "bibcode": "2024MNRAS.532..841B",
+    "title": "Helium reionization from empirical quasar luminosity functions before and after JWST",
+    "first_author": "Basu, Arghyadeep",
+    "year": "",
+    "citations": 12,
+    "group": 3
+   },
+   {
+    "id": 5,
+    "bibcode": "2026arXiv260506770H",
+    "title": "A Glimpse of the Low-Mass End of the Direct Mass-Metallicity Relation at $z\\sim6-8$",
+    "first_author": "Hsiao, Tiger Yu-Yang",
+    "year": "",
+    "citations": 14,
+    "group": 2
+   },
+   {
+    "id": 6,
+    "bibcode": "2026arXiv260120045A",
+    "title": "GLIMPSE-DDT spectroscopic properties of faint-end galaxies at $z\\sim6$: Towards first metal enrichment, dust production, and ionizing photon production",
+    "first_author": "Asada, Yoshihisa",
+    "year": "",
+    "citations": 18,
+    "group": 2
+   },
+   {
+    "id": 7,
+    "bibcode": "2026A&A...710L..15K",
+    "title": "GLIMPSE-D: Metallicity decline in faint galaxies: Implications for [O III]+Hβ luminosity function and re-ionisation budget",
+    "first_author": "Korber, Damien",
+    "year": "",
+    "citations": 9,
+    "group": 2
+   },
+   {
+    "id": 8,
+    "bibcode": "2026MNRAS.546ag174B",
+    "title": "Influence of the spectral energy distribution of reionization-era sources on the Lyman-α forest",
+    "first_author": "Basu, Arghyadeep",
+    "year": "",
+    "citations": 4,
+    "group": 3
+   },
+   {
+    "id": 9,
+    "bibcode": "2026MNRAS.552g1709B",
+    "title": "Probing helium reionization through the <SUP>3</SUP>He<SUP>+</SUP> hyperfine transition line",
+    "first_author": "Basu, Arghyadeep",
+    "year": "",
+    "citations": 2,
+    "group": 3
+   },
+   {
+    "id": 10,
+    "bibcode": "2025arXiv251022043B",
+    "title": "Tracing The Start and End of Cosmic Reionization -- Exploring The Role of Ionizing Sources as drivers",
+    "first_author": "Basu, Arghyadeep",
+    "year": "",
+    "citations": 0,
+    "group": 2
+   },
+   {
+    "id": 11,
+    "bibcode": "2026arXiv261110102K",
+    "title": "What observations are needed to advance our theoretical understanding of galaxy formation at high redshift?",
+    "first_author": "Katz, H.",
+    "year": "",
+    "citations": 0,
+    "group": 2
+   },
+   {
+    "id": 12,
+    "bibcode": "2026arXiv261037751M",
+    "title": "A GLIMPSE of Dark Matter: JWST Constraints on Early Structure Formation",
+    "first_author": "Muñoz, Julian B.",
+    "year": "",
+    "citations": 0,
+    "group": 2
+   },
+   {
+    "id": 13,
+    "bibcode": "2026arXiv261024064B",
+    "title": "Consistently Reproducing Early Galaxy Observations and 21-cm Signal during the Epoch of Reionization",
+    "first_author": "Bianco, Michele",
+    "year": "",
+    "citations": 0,
+    "group": 2
+   }
+  ],
+  "links": [
+   {
+    "source": 0,
+    "target": 1,
+    "value": 1,
+    "shared": 23
+   },
+   {
+    "source": 0,
+    "target": 2,
+    "value": 1,
+    "shared": 40
+   },
+   {
+    "source": 0,
+    "target": 3,
+    "value": 1,
+    "shared": 18
+   },
+   {
+    "source": 0,
+    "target": 6,
+    "value": 1,
+    "shared": 16
+   },
+   {
+    "source": 0,
+    "target": 7,
+    "value": 1,
+    "shared": 9
+   },
+   {
+    "source": 0,
+    "target": 10,
+    "value": 1,
+    "shared": 2
+   },
+   {
+    "source": 0,
+    "target": 12,
+    "value": 1,
+    "shared": 7
+   },
+   {
+    "source": 0,
+    "target": 13,
+    "value": 1,
+    "shared": 15
+   },
+   {
+    "source": 1,
+    "target": 2,
+    "value": 1,
+    "shared": 31
+   },
+   {
+    "source": 1,
+    "target": 3,
+    "value": 1,
+    "shared": 10
+   },
+   {
+    "source": 1,
+    "target": 4,
+    "value": 1,
+    "shared": 1
+   },
+   {
+    "source": 1,
+    "target": 5,
+    "value": 1,
+    "shared": 1
+   },
+   {
+    "source": 1,
+    "target": 6,
+    "value": 1,
+    "shared": 16
+   },
+   {
+    "source": 1,
+    "target": 7,
+    "value": 1,
+    "shared": 13
+   },
+   {
+    "source": 1,
+    "target": 8,
+    "value": 1,
+    "shared": 13
+   },
+   {
+    "source": 1,
+    "target": 9,
+    "value": 1,
+    "shared": 1
+   },
+   {
+    "source": 1,
+    "target": 10,
+    "value": 1,
+    "shared": 1
+   },
+   {
+    "source": 1,
+    "target": 12,
+    "value": 1,
+    "shared": 8
+   },
+   {
+    "source": 1,
+    "target": 13,
+    "value": 1,
+    "shared": 10
+   },
+   {
+    "source": 2,
+    "target": 3,
+    "value": 1,
+    "shared": 15
+   },
+   {
+    "source": 2,
+    "target": 4,
+    "value": 1,
+    "shared": 2
+   },
+   {
+    "source": 2,
+    "target": 6,
+    "value": 1,
+    "shared": 17
+   },
+   {
+    "source": 2,
+    "target": 7,
+    "value": 1,
+    "shared": 7
+   },
+   {
+    "source": 2,
+    "target": 8,
+    "value": 1,
+    "shared": 9
+   },
+   {
+    "source": 2,
+    "target": 9,
+    "value": 1,
+    "shared": 2
+   },
+   {
+    "source": 2,
+    "target": 10,
+    "value": 1,
+    "shared": 3
+   },
+   {
+    "source": 2,
+    "target": 11,
+    "value": 1,
+    "shared": 1
+   },
+   {
+    "source": 2,
+    "target": 12,
+    "value": 1,
+    "shared": 19
+   },
+   {
+    "source": 2,
+    "target": 13,
+    "value": 1,
+    "shared": 20
+   },
+   {
+    "source": 3,
+    "target": 4,
+    "value": 1,
+    "shared": 2
+   },
+   {
+    "source": 3,
+    "target": 6,
+    "value": 1,
+    "shared": 2
+   },
+   {
+    "source": 3,
+    "target": 8,
+    "value": 1,
+    "shared": 3
+   },
+   {
+    "source": 3,
+    "target": 9,
+    "value": 1,
+    "shared": 2
+   },
+   {
+    "source": 3,
+    "target": 10,
+    "value": 1,
+    "shared": 6
+   },
+   {
+    "source": 3,
+    "target": 12,
+    "value": 1,
+    "shared": 14
+   },
+   {
+    "source": 3,
+    "target": 13,
+    "value": 1,
+    "shared": 21
+   },
+   {
+    "source": 4,
+    "target": 8,
+    "value": 1,
+    "shared": 26
+   },
+   {
+    "source": 4,
+    "target": 9,
+    "value": 1,
+    "shared": 31
+   },
+   {
+    "source": 4,
+    "target": 12,
+    "value": 1,
+    "shared": 2
+   },
+   {
+    "source": 4,
+    "target": 13,
+    "value": 1,
+    "shared": 7
+   },
+   {
+    "source": 6,
+    "target": 7,
+    "value": 1,
+    "shared": 10
+   },
+   {
+    "source": 6,
+    "target": 8,
+    "value": 1,
+    "shared": 2
+   },
+   {
+    "source": 6,
+    "target": 12,
+    "value": 1,
+    "shared": 2
+   },
+   {
+    "source": 6,
+    "target": 13,
+    "value": 1,
+    "shared": 2
+   },
+   {
+    "source": 7,
+    "target": 8,
+    "value": 1,
+    "shared": 3
+   },
+   {
+    "source": 7,
+    "target": 12,
+    "value": 1,
+    "shared": 4
+   },
+   {
+    "source": 7,
+    "target": 13,
+    "value": 1,
+    "shared": 5
+   },
+   {
+    "source": 8,
+    "target": 9,
+    "value": 1,
+    "shared": 18
+   },
+   {
+    "source": 8,
+    "target": 10,
+    "value": 1,
+    "shared": 4
+   },
+   {
+    "source": 8,
+    "target": 12,
+    "value": 1,
+    "shared": 2
+   },
+   {
+    "source": 8,
+    "target": 13,
+    "value": 1,
+    "shared": 16
+   },
+   {
+    "source": 9,
+    "target": 12,
+    "value": 1,
+    "shared": 2
+   },
+   {
+    "source": 9,
+    "target": 13,
+    "value": 1,
+    "shared": 10
+   },
+   {
+    "source": 10,
+    "target": 12,
+    "value": 1,
+    "shared": 3
+   },
+   {
+    "source": 11,
+    "target": 12,
+    "value": 1,
+    "shared": 1
+   },
+   {
+    "source": 12,
+    "target": 13,
+    "value": 1,
+    "shared": 10
+   }
+  ]
+ },
+ "concepts": [
+  {
+   "word": "observation",
+   "count": 15,
+   "papers": 20,
+   "weight": 4.819
+  },
+  {
+   "word": "present",
+   "count": 10,
+   "papers": 11,
+   "weight": 4.649
+  },
+  {
+   "word": "star",
+   "count": 11,
+   "papers": 14,
+   "weight": 4.441
+  },
+  {
+   "word": "include",
+   "count": 9,
+   "papers": 10,
+   "weight": 4.411
+  },
+  {
+   "word": "study",
+   "count": 9,
+   "papers": 10,
+   "weight": 4.411
+  },
+  {
+   "word": "active",
+   "count": 8,
+   "papers": 9,
+   "weight": 4.148
+  },
+  {
+   "word": "nucleus",
+   "count": 8,
+   "papers": 9,
+   "weight": 4.148
+  },
+  {
+   "word": "history",
+   "count": 8,
+   "papers": 9,
+   "weight": 4.148
+  },
+  {
+   "word": "result",
+   "count": 12,
+   "papers": 18,
+   "weight": 4.134
+  },
+  {
+   "word": "provide",
+   "count": 10,
+   "papers": 14,
+   "weight": 4.037
+  },
+  {
+   "word": "function",
+   "count": 12,
+   "papers": 19,
+   "weight": 3.989
+  },
+  {
+   "word": "simulation",
+   "count": 11,
+   "papers": 17,
+   "weight": 3.933
+  },
+  {
+   "word": "observe",
+   "count": 7,
+   "papers": 8,
+   "weight": 3.856
+  },
+  {
+   "word": "reveal",
+   "count": 7,
+   "papers": 8,
+   "weight": 3.856
+  },
+  {
+   "word": "field",
+   "count": 7,
+   "papers": 8,
+   "weight": 3.856
+  },
+  {
+   "word": "recent",
+   "count": 7,
+   "papers": 8,
+   "weight": 3.856
+  },
+  {
+   "word": "observational",
+   "count": 7,
+   "papers": 8,
+   "weight": 3.856
+  },
+  {
+   "word": "deep",
+   "count": 9,
+   "papers": 13,
+   "weight": 3.799
+  },
+  {
+   "word": "low",
+   "count": 9,
+   "papers": 13,
+   "weight": 3.799
+  },
+  {
+   "word": "constraint",
+   "count": 9,
+   "papers": 13,
+   "weight": 3.799
+  },
+  {
+   "word": "detection",
+   "count": 8,
+   "papers": 11,
+   "weight": 3.719
+  },
+  {
+   "word": "lense",
+   "count": 8,
+   "papers": 11,
+   "weight": 3.719
+  },
+  {
+   "word": "galactic",
+   "count": 10,
+   "papers": 16,
+   "weight": 3.716
+  },
+  {
+   "word": "redshift",
+   "count": 13,
+   "papers": 24,
+   "weight": 3.683
+  },
+  {
+   "word": "early",
+   "count": 11,
+   "papers": 19,
+   "weight": 3.657
+  },
+  {
+   "word": "medium",
+   "count": 9,
+   "papers": 14,
+   "weight": 3.633
+  },
+  {
+   "word": "property",
+   "count": 9,
+   "papers": 14,
+   "weight": 3.633
+  },
+  {
+   "word": "evolution",
+   "count": 9,
+   "papers": 14,
+   "weight": 3.633
+  },
+  {
+   "word": "datum",
+   "count": 7,
+   "papers": 9,
+   "weight": 3.63
+  },
+  {
+   "word": "relation",
+   "count": 7,
+   "papers": 9,
+   "weight": 3.63
+  },
+  {
+   "word": "cosmological",
+   "count": 7,
+   "papers": 9,
+   "weight": 3.63
+  },
+  {
+   "word": "depth",
+   "count": 7,
+   "papers": 9,
+   "weight": 3.63
+  },
+  {
+   "word": "explore",
+   "count": 7,
+   "papers": 9,
+   "weight": 3.63
+  },
+  {
+   "word": "high",
+   "count": 12,
+   "papers": 22,
+   "weight": 3.612
+  },
+  {
+   "word": "survey",
+   "count": 10,
+   "papers": 17,
+   "weight": 3.575
+  },
+  {
+   "word": "find",
+   "count": 8,
+   "papers": 12,
+   "weight": 3.539
+  },
+  {
+   "word": "emission",
+   "count": 9,
+   "papers": 15,
+   "weight": 3.483
+  },
+  {
+   "word": "NIRSpec",
+   "count": 7,
+   "papers": 10,
+   "weight": 3.431
+  },
+  {
+   "word": "large",
+   "count": 7,
+   "papers": 10,
+   "weight": 3.431
+  },
+  {
+   "word": "formation",
+   "count": 12,
+   "papers": 24,
+   "weight": 3.4
+  },
+  {
+   "word": "glimpse",
+   "count": 8,
+   "papers": 13,
+   "weight": 3.377
+  },
+  {
+   "word": "luminosity",
+   "count": 9,
+   "papers": 16,
+   "weight": 3.344
+  },
+  {
+   "word": "drive",
+   "count": 6,
+   "papers": 8,
+   "weight": 3.305
+  },
+  {
+   "word": "require",
+   "count": 6,
+   "papers": 8,
+   "weight": 3.305
+  },
+  {
+   "word": "radiative",
+   "count": 6,
+   "papers": 8,
+   "weight": 3.305
+  },
+  {
+   "word": "JWST",
+   "count": 15,
+   "papers": 34,
+   "weight": 3.29
+  },
+  {
+   "word": "sample",
+   "count": 7,
+   "papers": 11,
+   "weight": 3.254
+  },
+  {
+   "word": "produce",
+   "count": 7,
+   "papers": 11,
+   "weight": 3.254
+  },
+  {
+   "word": "scale",
+   "count": 9,
+   "papers": 17,
+   "weight": 3.218
+  },
+  {
+   "word": "abundance",
+   "count": 6,
+   "papers": 9,
+   "weight": 3.111
+  },
+  {
+   "word": "time",
+   "count": 6,
+   "papers": 9,
+   "weight": 3.111
+  },
+  {
+   "word": "constrain",
+   "count": 6,
+   "papers": 9,
+   "weight": 3.111
+  },
+  {
+   "word": "strong",
+   "count": 6,
+   "papers": 9,
+   "weight": 3.111
+  },
+  {
+   "word": "population",
+   "count": 7,
+   "papers": 12,
+   "weight": 3.097
+  },
+  {
+   "word": "remain",
+   "count": 7,
+   "papers": 12,
+   "weight": 3.097
+  },
+  {
+   "word": "end",
+   "count": 7,
+   "papers": 12,
+   "weight": 3.097
+  },
+  {
+   "word": "power",
+   "count": 6,
+   "papers": 10,
+   "weight": 2.941
+  },
+  {
+   "word": "mass",
+   "count": 12,
+   "papers": 31,
+   "weight": 2.823
+  },
+  {
+   "word": "stellar",
+   "count": 6,
+   "papers": 11,
+   "weight": 2.789
+  },
+  {
+   "word": "magnitude",
+   "count": 5,
+   "papers": 8,
+   "weight": 2.755
+  },
+  {
+   "word": "probe",
+   "count": 5,
+   "papers": 8,
+   "weight": 2.755
+  },
+  {
+   "word": "GLIMPSE",
+   "count": 5,
+   "papers": 8,
+   "weight": 2.755
+  },
+  {
+   "word": "source",
+   "count": 7,
+   "papers": 16,
+   "weight": 2.601
+  },
+  {
+   "word": "spectra",
+   "count": 5,
+   "papers": 9,
+   "weight": 2.593
+  },
+  {
+   "word": "measurement",
+   "count": 5,
+   "papers": 9,
+   "weight": 2.593
+  },
+  {
+   "word": "program",
+   "count": 5,
+   "papers": 9,
+   "weight": 2.593
+  },
+  {
+   "word": "faint",
+   "count": 6,
+   "papers": 13,
+   "weight": 2.532
+  },
+  {
+   "word": "ionize",
+   "count": 8,
+   "papers": 21,
+   "weight": 2.486
+  },
+  {
+   "word": "feedback",
+   "count": 5,
+   "papers": 10,
+   "weight": 2.45
+  },
+  {
+   "word": "line",
+   "count": 9,
+   "papers": 26,
+   "weight": 2.408
+  },
+  {
+   "word": "host",
+   "count": 5,
+   "papers": 11,
+   "weight": 2.324
+  },
+  {
+   "word": "photon",
+   "count": 5,
+   "papers": 11,
+   "weight": 2.324
+  },
+  {
+   "word": "reionization",
+   "count": 10,
+   "papers": 32,
+   "weight": 2.297
+  },
+  {
+   "word": "model",
+   "count": 12,
+   "papers": 41,
+   "weight": 2.276
+  },
+  {
+   "word": "fraction",
+   "count": 4,
+   "papers": 8,
+   "weight": 2.204
+  },
+  {
+   "word": "dark",
+   "count": 4,
+   "papers": 8,
+   "weight": 2.204
+  },
+  {
+   "word": "forest",
+   "count": 4,
+   "papers": 8,
+   "weight": 2.204
+  },
+  {
+   "word": "gas",
+   "count": 7,
+   "papers": 21,
+   "weight": 2.176
+  },
+  {
+   "word": "production",
+   "count": 4,
+   "papers": 9,
+   "weight": 2.074
+  },
+  {
+   "word": "transition",
+   "count": 4,
+   "papers": 9,
+   "weight": 2.074
+  }
+ ]
+}

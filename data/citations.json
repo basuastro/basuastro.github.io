@@ -1,4 +1,81 @@
 {
-  "updated": null,
-  "papers": {}
+  "updated": "2026-11-24T10:08:20Z",
+  "papers": {
+    "doi:\"10.1093/mnras/stag1709\"": {
+      "bibcode": "2026MNRAS.552g1709B",
+      "citations": 2
+    },
+    "doi:\"10.1093/mnras/stag174\"": {
+      "bibcode": "2026MNRAS.546ag174B",
+      "citations": 4
+    },
+    "doi:\"10.1093/mnras/staf2240\"": {
+      "bibcode": "2026MNRAS.545f2240B",
+      "citations": 10
+    },
+    "bibcode:\"2024MNRAS.532..841B\"": {
+      "bibcode": "2024MNRAS.532..841B",
+      "citations": 12
+    },
+    "bibcode:\"2022MNRAS.517.5063B\"": {
+      "bibcode": "2022MNRAS.517.5063B",
+      "citations": 8
+    },
+    "bibcode:\"2021MNRAS.502.1605B\"": {
+      "bibcode": "2021MNRAS.502.1605B",
+      "citations": 16
+    },
+    "identifier:\"arXiv:2611.25823\"": {
+      "bibcode": "2026arXiv261125823B",
+      "citations": 0
+    },
+    "identifier:\"arXiv:2611.07070\"": {
+      "bibcode": "2026arXiv261107070C",
+      "citations": 0
+    },
+    "identifier:\"arXiv:2611.07027\"": {
+      "bibcode": "2026arXiv261107027C",
+      "citations": 0
+    },
+    "identifier:\"arXiv:2611.07006\"": {
+      "bibcode": "2026arXiv261107006P",
+      "citations": 0
+    },
+    "identifier:\"arXiv:2610.37751\"": {
+      "bibcode": "2026arXiv261037751M",
+      "citations": 0
+    },
+    "identifier:\"arXiv:2610.24064\"": {
+      "bibcode": "2026arXiv261024064B",
+      "citations": 0
+    },
+    "identifier:\"arXiv:2605.06770\"": {
+      "bibcode": "2026arXiv260506770H",
+      "citations": 14
+    },
+    "identifier:\"arXiv:2604.23823\"": {
+      "bibcode": "2026OJAp....966816A",
+      "citations": 21
+    },
+    "identifier:\"arXiv:2604.08687\"": {
+      "bibcode": "2026A&A...715A..57K",
+      "citations": 8
+    },
+    "identifier:\"arXiv:2601.20045\"": {
+      "bibcode": "2026arXiv260120045A",
+      "citations": 18
+    },
+    "identifier:\"arXiv:2601.19995\"": {
+      "bibcode": "2026ApJ..1001..234J",
+      "citations": 24
+    },
+    "identifier:\"arXiv:2601.19989\"": {
+      "bibcode": "2026A&A...710L..15K",
+      "citations": 9
+    },
+    "identifier:\"arXiv:2511.07542\"": {
+      "bibcode": "2025arXiv251107542A",
+      "citations": 51
+    }
+  }
 }
